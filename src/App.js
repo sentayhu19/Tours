@@ -17,7 +17,6 @@ const fetchToursData = async()=>{
     return tours;
   }catch(err){
 setLoading(false);
-console.log("ERRRR",err);
   }
 }
 useEffect(()=>{

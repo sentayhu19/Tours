@@ -94,5 +94,11 @@ footer{
 }
 .not:hover{
    border-color: red;
-   box-shadow:  3px 3px 3px 3px red;
+   color: black;
+   box-shadow:  2px 2px 2px 2px red;
+}
+
+#readmore{
+    border: none;
+    color: blue;
 }

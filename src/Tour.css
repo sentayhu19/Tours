@@ -85,20 +85,20 @@ footer{
     text-align: center;
     color: var(--primary2);
 }
-.not{
+.delete-btn{
     align-self: center;
     color: red;
     background-color: var(--button);
     width: 200px;
     margin-bottom: 10px;
 }
-.not:hover{
+.delete-btn:hover{
    border-color: red;
    color: black;
    box-shadow:  2px 2px 2px 2px red;
 }
 
 #readmore{
-    border: none;
+    border-color: blue;
     color: blue;
 }

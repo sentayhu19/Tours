@@ -7,6 +7,13 @@ function App() {
 const [loading,setLoading] = useState(true);
 const [tours, setTours] =  useState([]);
 
+let removeCard =(id)=>{
+  console.log("am called to remove");
+  const newTours = tours.filters((tour) => tour.id != id);
+  console.log("Tours: ",setTours);
+ setTours(newTours);
+  }
+
 const fetchToursData = async()=>{
   setLoading(true);
   try{
@@ -33,10 +40,11 @@ if(loading){
     <main>
       <Tours tours={tours} />
       <footer>
-        <p class="year">Tour  	&copy; 2022 All Rights reserved by Sentayhu</p>
+        <p className="year">Tour  	&copy; 2022 All Rights reserved by Sentayhu</p>
       </footer>
     </main>  
   );
+ 
 }
 
 export default App;

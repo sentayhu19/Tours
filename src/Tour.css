@@ -3,7 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --primary1: rgb(197, 103, 103);
+}
 img{
-    width: 400px;
-    height: 200px;
+    width: 550px;
+    height: 250px;
+}
+
+.tour-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 550px;
+}
+h2{
+    text-align: center;
+    color: var(--primary1);
+}
+h2::after{
+    border-bottom: 2px blue solid;
+    width: 20px;
+    height: 20px;
+}
+.loading-pic{
+color: red;
+margin-left: 700px;
+font-size: 150px;
+margin-top: 200px;
 }

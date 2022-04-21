@@ -4,6 +4,7 @@
     --background: rgb(157, 147, 147);
     --paragraph: rgb(235, 191, 191);
     --footer: rgb(39, 36, 36);
+    --button : rgb(255, 253, 253);
 }
 
 *{
@@ -19,6 +20,7 @@ main{
 .img:hover{
    
     transform: scale(1.1);
+    -webkit-transition: transform 1s ease-in-out;
 }
 img{
     padding-top: 10px;
@@ -39,13 +41,19 @@ img{
     border-radius: 10px;
 }
 h2{
+    position: relative;
     text-align: center;
     color: var(--primary1);
+    margin-bottom: 20px;
 }
 h2::after{
+    content: " ";
+    position: absolute;
     border-bottom: 2px blue solid;
-    width: 20px;
+    width: 3%;
     height: 20px;
+    bottom: 0;
+    left: 48.5%;
 }
 .loading-pic{
 color: red;
@@ -55,7 +63,6 @@ margin-top: 230px;
 }
 
 .price{
-    text-align: center;
     background-color: green;
     width: 60px;
     color: var(--primary2);
@@ -77,4 +84,15 @@ footer{
 .year{
     text-align: center;
     color: var(--primary2);
+}
+.not{
+    align-self: center;
+    color: red;
+    background-color: var(--button);
+    width: 200px;
+    margin-bottom: 10px;
+}
+.not:hover{
+   border-color: red;
+   box-shadow:  3px 3px 3px 3px red;
 }

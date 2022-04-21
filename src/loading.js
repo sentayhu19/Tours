@@ -1,9 +1,9 @@
 import React from 'react';
-
+import 'https://kit.fontawesome.com/eb94992e2c.js';
 const Loading = () => {
   return (
     <div className="loading">
-      <h1>loading...</h1>
+      <i className="fas fa-spinner fa-spin loading-pic"></i>
     </div>
   );
 };

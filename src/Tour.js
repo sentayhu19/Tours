@@ -4,8 +4,8 @@ const Tour =({id,image,info,price,name})=>{
     return( <div className="tour-wrap">
         <p className="name">{name}</p>
         {<img src={image} className="img" />}
-        <p>{info}</p>
-        <p>$ {price}</p>
+        <p className="info">{info}</p>
+        <p className="price">$ {price}</p>
         </div>
         );
 }

@@ -33,6 +33,9 @@ if(loading){
   return (
     <main>
       <Tours tours={tours} />
+      <footer>
+        <p class="year">Tour  	&copy; 2022 All Rights reserved by Sentayhu</p>
+      </footer>
     </main>  
   );
 }

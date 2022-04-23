@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Tours is a site that displays list of Places with Title, price, description and image 
 
-<!-- ![Tour design (20)]() comming soon-->
+
+![Tour (20)](https://raw.githubusercontent.com/sentayhu19/Tours/readme/Screenshot%202022-04-23%20231541.png)
 
 <!-- ## Live demo -->
 

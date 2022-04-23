@@ -102,3 +102,15 @@ footer{
     border-color: blue;
     color: blue;
 }
+
+.refresh
+{
+    margin-left: 45%;
+    width: 100px;
+    background-color: var(--primary1);
+    margin-bottom: 37%;
+}
+
+.refresh:active{
+    width: 130px;
+}

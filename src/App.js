@@ -7,6 +7,16 @@ function App() {
 const [loading,setLoading] = useState(true);
 const [tours, setTours] =  useState([]);
 
+let removeCard =(id)=>{
+  try{
+  const newTours = tours.filter((tour) => tour.id !== id);
+ setTours(newTours);
+  }
+  catch(err){
+    document.getElementsByClassName('status').innerHTML="Error while geting data , please reload page";
+  }
+  }
+
 const fetchToursData = async()=>{
   setLoading(true);
   try{
@@ -16,11 +26,10 @@ const fetchToursData = async()=>{
     setTours(tours);
     return tours;
   }catch(err){
-setLoading(false);
+document.getElementsByClassName('status').innerHTML="Error while geting data , please reload page";
   }
 }
 useEffect(()=>{
-  console.log("useeffect fetched fron API", fetchToursData());
 },[]);
 if(loading){
   return( 
@@ -29,14 +38,30 @@ if(loading){
     </main>
   );
 }
+if(tours.length===0){
+  return(
+    <div>
+      <h2>Our Tours</h2>
+      <h2>Tour List Empty to get Tours List click Refresh!</h2>
+      <span className="status"></span>
+      <button className="refresh" onClick={fetchToursData}>Refresh</button>
+      <footer>
+        <p className="year">Tour  	&copy; 2022 All Rights reserved [ Sentayhu ]</p>
+      </footer>
+    </div>
+  )
+}
   return (
     <main>
-      <Tours tours={tours} />
+      <h2>Our Tours</h2>
+      <span className="status"></span>
+      <Tours tours={tours} removeCard={removeCard}/>
       <footer>
-        <p class="year">Tour  	&copy; 2022 All Rights reserved by Sentayhu</p>
+        <p className="year">Tour  	&copy; 2022 All Rights reserved [ Sentayhu ]</p>
       </footer>
     </main>  
   );
+ 
 }
 
 export default App;

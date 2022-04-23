@@ -82,11 +82,7 @@ Feel free to check the [issues page](https://github.com/sentayhu19/Tours/issues)
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
--This project was inspired by [Microverse](https://www.microverse.org)
-
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.![](https://img.shields.io/badge/Microverse-blueviolet)
+This project is [MIT](./LICENSE) licensed.
